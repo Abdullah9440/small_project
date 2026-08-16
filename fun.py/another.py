@@ -22,5 +22,19 @@
 #print(max_gaps)
 #print(percentage)
 
+#Write a program that creates a 1010 list of random integers between 1 and 100. Then do the
+#following:
+#(a) Print the list.
+#(b) Find the largest value in the third row.
+#(c) Find the smallest value in the sixth column.
 
-    
+import random
+
+L = [[random.randint(1,100) for j in range(10)] for i in range(10)]
+largest = max(L[2])
+smallest = min(L[i][5] for i in range(10))
+
+
+print(L)
+print(largest)
+print(smallest)
