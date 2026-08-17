@@ -95,3 +95,24 @@ if wrong == 0:
     print("Magic Square")
 else:
     print("Not Magic Square")'''
+    
+    
+   
+'''import random
+
+characters = ['@', '5', '#', 'A', '!', '0', 'b', '$', 'z',
+              'N', 'x', '-', '+', ':', 'c', '%', '&', '*']
+items = characters * 2
+random.shuffle(items)
+board = []
+for i in range(6):
+    row = items[i*6:(i+1)*6]
+    board.append(row)
+for row in board:
+ print(row)'''
+ 
+ 
+ 
+ 
+ 
+ 
