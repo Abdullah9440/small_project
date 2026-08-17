@@ -17,7 +17,6 @@
 #gaps = [L[i+1] - L[i] for i in range(len(L)-1)]
 #max_gaps = max(gaps)
 #percentage = gaps.count(2)/len(gaps)*100
-#
 #print(gaps)
 #print(max_gaps)
 #print(percentage)
@@ -28,13 +27,71 @@
 #(b) Find the largest value in the third row.
 #(c) Find the smallest value in the sixth column.
 
-import random
+#import random
+#L = [[random.randint(1,100) for j in range(10)] for i in range(10)]
+#largest = max(L[2])
+#smallest = min(L[i][5] for i in range(10))
+#print(L)
+#print(largest)
+#print(smallest)
 
-L = [[random.randint(1,100) for j in range(10)] for i in range(10)]
-largest = max(L[2])
-smallest = min(L[i][5] for i in range(10))
+#checkerboard pattern for 1 and 2,1 has to be start from upper left corner
+#L = []
+#for i in range(8):
+#    row = []
+#    for j in range(8):
+#        if (i + j)%2 == 0:
+#            row.append(1)
+#        else:
+#            row.append(2)
+#    L.append(row)
+#print(L)
 
+'''L = [
+    [16, 3, 2, 13],
+    [5, 10, 11, 8],
+    [9, 6, 7, 12],
+    [4, 15, 14, 1]
+]
 
-print(L)
-print(largest)
-print(smallest)
+target = sum(L[0])
+wrong = 0
+
+# Check rows
+for i in range(4):
+    if sum(L[i]) != target:
+        wrong += 1
+
+# Check columns
+for j in range(4):
+    total = 0
+
+    for i in range(4):
+        total += L[i][j]
+
+    if total != target:
+        wrong += 1
+
+# First diagonal
+total = 0
+
+for i in range(4):
+    total += L[i][i]
+
+if total != target:
+    wrong += 1
+
+# Second diagonal
+total = 0
+
+for i in range(4):
+    total += L[i][3-i]
+
+if total != target:
+    wrong += 1
+
+# Final result
+if wrong == 0:
+    print("Magic Square")
+else:
+    print("Not Magic Square")'''
