@@ -59,7 +59,7 @@ average = total / count
 print(star_marks)
 print(f"and the average is {average}")'''
 
-import random
+'''import random
 
 number = random.randint(1, 100)
 guesses = 5
@@ -84,9 +84,40 @@ while guesses > 0:
     guesses -= 1
 
 if guesses == 0:
-    print('You lost!')
+    print('You lost!')'''
+
+'''import random
+L = ['a','b','c','d','a','d','e','b','x','z']
+word = random.choice(L)
+while L.count(word) != 1:
+    word = random.choice(L)
+print(word)'''
+
+'''import random
+L = [[0 for j in range(5)] for i in range(5)]
+i = 0
+while i < 10:
+    row = random.randint(0,4)
+    col = random.randint(0,4)
+    if L[row][col] == 0:
+       L[row][col] = 1
+       i +=1
+for row in L:
+    print(row)'''
+    
+    
+'''L = [0, 0, 0, 1, 0, 1, 0]
+for i in range(len(L)):
+    if L[i] == 1:
+        L[i] = 1
+        break
+
+print("There are no nonzero entries.")
+
+print(L)'''         
 
 
+    
 
     
         
